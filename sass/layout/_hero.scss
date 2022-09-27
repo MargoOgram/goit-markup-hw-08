@@ -21,6 +21,10 @@
     color: var(--accent-color-title);
     background-color: var(--accent-color);
 
+    &:hover,
+    &:focus {
+    background: var(--background-color-btn);}
+
     
     cursor: pointer;
     display: block;

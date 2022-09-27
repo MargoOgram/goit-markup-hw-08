@@ -58,10 +58,12 @@
         padding-bottom: 63px;
 
         height: 100%;
-        transform: translateY(100%);
+        transform: translateY(101%);
         transition: var(--transition-function);
 
-        .item-port:hover & {
+        .link-port:hover &,
+        .link-port:focus &
+         {
                 transform: translateY(0); }
 
 }

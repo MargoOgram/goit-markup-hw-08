@@ -37,6 +37,10 @@
     margin: 0 auto;
     margin-top: 30px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+    background: var(--background-color-btn);}
     
 
 }
@@ -122,9 +126,6 @@
 
 }
 
-.input-check{
-    position: absolute;
-} 
 
 .check-icon{
     fill: transparent;
