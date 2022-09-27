@@ -1,0 +1,14 @@
+.logo {
+    @extend %common-logo;
+    color: var(--accent-color);
+    margin-right: 95px;
+}
+.logo__header {
+    @extend %common-logo;
+    color: var(--accent-color-logo);
+}
+.footer-logo {
+    @extend %common-logo;
+    color: var(--accent-color-title);
+    margin-bottom: 20px;
+}
