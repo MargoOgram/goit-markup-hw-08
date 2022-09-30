@@ -1,11 +1,23 @@
 .gallery {
     padding-top: 47px;
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+    @include descktop{
+        display: flex;
+    }
+    
+    
     
 }
 .gallery__title{
     @extend%title;
 }
 .gallery__list {
+
     display: flex;
     
     .gallery__item:not(:last-child) {

@@ -3,8 +3,20 @@
 }
 .list-btn  {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    
+    @include mobile{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+    }
+    @include tablet{
+        justify-content: center;
+    }
+    @include descktop{
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 
     .btn-link +.btn-link {
         margin-left: 8px;}
@@ -22,6 +34,9 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    @media screen and (min-width:480px){
+        margin-bottom: 15px;
+    }
 
     background: var(--background-accent-color);
     border-radius: 4px;
