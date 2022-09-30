@@ -6,8 +6,18 @@
     
 }
 .footer-container {
-    display: flex;
     gap: 70px;
+
+  
+
+    @include tablet{
+        padding-left: 76px;
+        padding-right: 76px;
+    }
+    @include descktop{
+        display: flex;
+
+       }
 
 }
 .footer-address {
@@ -19,10 +29,21 @@
     color: var(--accent-color-title);
     margin-bottom: 9px;
     transition: var(--transition-function);
+
+    width: 230px;
+    margin: 0 auto;
     
     &:hover,
     &:focus {
      color: var(--accent-color); }
+
+   
+     @include descktop{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 9px;
+        margin-top: 0;
+     }
 
 }
 .footer-contact {
@@ -37,9 +58,19 @@
     margin-bottom: 9px;
     transition: var(--transition-function);
 
+    width: 160px;
+    margin: 0 auto;
+
     &:hover,
     &:focus {
      color: var(--accent-color);}
+
+     @include descktop{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 9px;
+        margin-top: 0;
+     }
 }
 .tel {
     margin-bottom: 0;
@@ -53,8 +84,18 @@
     letter-spacing: 0.03em;
     color: var(--accent-color-title);
     text-transform: uppercase;
-    padding-top: 10px;
-    margin-top: 0;
+
+    width: 120px;
+    margin: 0 auto; 
+    padding-top: 0;
+    margin-bottom: 20px; 
+   
+
+   
+    @include descktop{
+        padding-top: 10px;
+        margin-top: 0;
+    }
 }
 .footer-soc-link {
     @include soc-icon;
@@ -73,32 +114,52 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 60px;
+
+    @include descktop{
+        margin-bottom: 0;
+    }
 }
 .conteiner-form {
     margin-top: 0px;
    
 }
 .footer-form {
-    display: flex;
+    @include descktop{
+        display: flex;
+    }
+    
 }
 .input-footer {
-    width: 358px;
+    
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
+
+    display: block;
+        width: 450px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+
+    
+    @include descktop {
+        display: flex;
+        width: 358px;
+    }
 }
 .form-button{
-    display: flex;
+     
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    display: block;
+    margin: 0 auto;
+    
     padding-left: 28px;
     background: var(--accent-color);
     cursor: pointer;
@@ -118,6 +179,12 @@
     &:hover,
     &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
+
+
+    @include descktop{
+        display: flex;
+        margin-left: 12px;
+    }
 }
 
 .footer-button-icon {
@@ -125,4 +192,15 @@
     align-items: center;
     margin-left: 10px;
     
+}
+.footer__wrap{
+   margin-bottom: 60px;
+}
+.footer__title{
+    width: 207px;
+}
+.footer__inner{
+    @include tablet{
+    display: flex;
+    justify-content: space-between;}
 }

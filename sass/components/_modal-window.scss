@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    width: 528px;
+    width: 450px;
     min-height: 581px;
     padding: 40px;
 
@@ -12,6 +12,10 @@
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
     transition: transform  var(--transition-function);
+
+    @include descktop{
+        width: 528px;
+    }
     }
 
 .modal-close {

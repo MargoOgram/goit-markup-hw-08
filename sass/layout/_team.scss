@@ -6,23 +6,9 @@
 }
 .team__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
    
-    @include mobile{
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
-    @include tablet{
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
-    @include descktop{
-        display: flex;
-        gap: 30px;
-       
-    
-}
 
     
 }
