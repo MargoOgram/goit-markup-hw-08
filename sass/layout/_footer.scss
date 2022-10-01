@@ -143,9 +143,10 @@
     padding-left: 16px;
 
     display: block;
-        width: 450px;
-        margin: 0 auto;
-        margin-bottom: 15px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 15px;
 
     
     @include descktop {
